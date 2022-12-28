@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Formulario from './components/Formulario';
 
-function App() {
+function App({label, passwords, span}) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Formulario
+      label='Insert your name'
+      passwords='Insert your password'
+      span='This information will not appear to other people'
+      />
     </div>
   );
 }
